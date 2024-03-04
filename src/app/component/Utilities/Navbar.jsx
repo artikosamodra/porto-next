@@ -1,4 +1,5 @@
 "use client";
+import ThemeSwitcher from "@/app/ThemeSwitcher";
 import NavMenu from "./NavMenu";
 
 const Navbar = () => {
@@ -8,6 +9,7 @@ const Navbar = () => {
         <NavMenu linkUrl="/" linkTitle="About" />
         <NavMenu linkUrl="/" linkTitle="Project" />
         <NavMenu linkUrl="/" linkTitle="Contact" />
+        <ThemeSwitcher />
       </div>
     </section>
   );
