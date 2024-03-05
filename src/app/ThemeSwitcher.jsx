@@ -1,26 +1,45 @@
 "use client";
+// pages/index.js
+
+import { useEffect, useState } from "react";
 import { Sun, Moon } from "@phosphor-icons/react/dist/ssr";
 import { useTheme } from "next-themes";
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
+  const [initialRender, setInitialRender] = useState(true);
+
+  useEffect(() => {
+    if (initialRender) {
+      if (theme === "light") {
+        setInitialRender(false);
+      } else {
+        setTheme("light");
+      }
+    }
+  }, [theme, initialRender, setTheme]);
 
   return (
     <div>
-      {theme === "light" ? (
-        <button
-          onClick={() => setTheme("dark")}
-          className="border border-2 border-slate-600 rounded-lg p-2 hover:bg-cyan-600 transition duration-500"
-        >
-          <Moon size={24} />
+      {initialRender ? (
+        <button onClick={() => setTheme("light")} className="text-cyan-600">
+          <Moon size={24} weight="fill" />
         </button>
       ) : (
-        <button
-          onClick={() => setTheme("light")}
-          className="border border-2 border-slate-600 rounded-lg p-2 hover:bg-yellow-300 transition duration-500"
-        >
-          <Sun size={24} />
-        </button>
+        <>
+          {theme === "light" ? (
+            <button onClick={() => setTheme("dark")} className="text-cyan-600">
+              <Moon size={24} weight="fill" />
+            </button>
+          ) : (
+            <button
+              onClick={() => setTheme("light")}
+              className="text-yellow-400"
+            >
+              <Sun size={24} weight="fill" />
+            </button>
+          )}
+        </>
       )}
     </div>
   );
