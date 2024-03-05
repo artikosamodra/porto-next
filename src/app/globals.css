@@ -2,3 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-hover {
+  position: relative;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nav-hover:hover:after {
+  width: 100%;
+}
