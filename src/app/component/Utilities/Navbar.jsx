@@ -5,10 +5,10 @@ import NavMenu from "./NavMenu";
 const Navbar = () => {
   return (
     <section>
-      <div className="flex gap-14 items-center">
-        <NavMenu linkUrl="/" linkTitle="About" />
-        <NavMenu linkUrl="/" linkTitle="Project" />
-        <NavMenu linkUrl="/" linkTitle="Contact" />
+      <div className="flex gap-14 items-center font-bold">
+        <NavMenu linkUrl="/page/menu#about" linkTitle="About" />
+        <NavMenu linkUrl="/page/menu#project" linkTitle="Project" />
+        <NavMenu linkUrl="/page/menu#contact" linkTitle="Contact" />
         <ThemeSwitcher />
       </div>
     </section>

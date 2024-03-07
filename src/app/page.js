@@ -7,7 +7,7 @@ import TypingAnimation from "./component/Utilities/TypingAnimation";
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col justify-center items-center w-full h-screen font-bold animate__animated animate__fadeIn animate__slower">
+      <div className="flex flex-col justify-center items-center w-full h-screen font-bold animate__animated animate__zoomInDown">
         <Navbar />
         {/* <TypingAnimation /> */}
         <h1 className="text-7xl pt-10 pb-4">Artiko Fajar Samodra</h1>
