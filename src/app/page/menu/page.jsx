@@ -6,11 +6,8 @@ import NavbarB from "@/app/component/Utilities/NavbarB";
 
 const MainPage = () => {
   return (
-    <section>
-      <div className="flex justify-between px-20 py-5 bg-fuchsia-200 bg-opacity-60">
-        <Link href="/">
-          <h1 className="font-bold text-2xl">Artiko Fajar Samodra</h1>
-        </Link>
+    <section className="py-20">
+      <div className="w-full md:px-20 px-5 bg-fuchsia-200 bg-opacity-90 backdrop-filter fixed top-0 z-50 shadow-md py-4">
         <NavbarB />
       </div>
 
