@@ -2,12 +2,11 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const texts = ["Teks pertama", "Teks kedua", "Teks ketiga"];
-const typingDelay = 100;
+const typingDelay = 200;
 const erasingDelay = 50;
-const newTextDelay = 2000;
+const newTextDelay = 1100;
 
-const TypingAnimation = () => {
+const TypingAnimation = ({ texts }) => {
   const [textIndex, setTextIndex] = useState(0);
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
@@ -17,16 +16,19 @@ const TypingAnimation = () => {
       () => {
         if (isTyping) {
           if (text.length < texts[textIndex].length) {
-            setText((prev) => prev + texts[textIndex].charAt(prev.length));
+            setText((prev) => prev + texts[textIndex][prev.length]);
           } else {
             setIsTyping(false);
-            setTimeout(() => setIsTyping(true), newTextDelay);
+            setTimeout(() => {
+              setIsTyping(true);
+            }, newTextDelay);
           }
         } else {
           if (text.length > 0) {
             setText((prev) => prev.slice(0, -1));
           } else {
-            setTextIndex((prev) => (prev + 1) % texts.length);
+            const nextIndex = (textIndex + 1) % texts.length;
+            setTextIndex(nextIndex);
           }
         }
       },
@@ -34,11 +36,11 @@ const TypingAnimation = () => {
     );
 
     return () => clearInterval(interval);
-  }, [text, textIndex, isTyping]);
+  }, [text, textIndex, isTyping, texts]);
 
   return (
-    <div className="mt-20 text-4xl">
-      <h1 className="pl-5">Halo{text}</h1> {/* Menetapkan padding kiri */}
+    <div className="text-3xl mt-4">
+      <h1 className="">F{text}</h1>
     </div>
   );
 };
