@@ -1,8 +1,8 @@
-import Navbar from "@/app/component/Utilities/Navbar";
 import About from "../About/page";
 import Project from "../Project/page";
 import Contact from "../Contact/page";
 import Link from "next/link";
+import NavbarB from "@/app/component/Utilities/NavbarB";
 
 const MainPage = () => {
   return (
@@ -11,7 +11,7 @@ const MainPage = () => {
         <Link href="/">
           <h1 className="font-bold text-2xl">Artiko Fajar Samodra</h1>
         </Link>
-        <Navbar />
+        <NavbarB />
       </div>
 
       <div className="px-20 py-5">

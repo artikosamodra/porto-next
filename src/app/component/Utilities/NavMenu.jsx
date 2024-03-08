@@ -3,7 +3,7 @@ import "animate.css";
 
 const NavMenu = ({ linkUrl, linkTitle }) => {
   return (
-    <div className="text-xl">
+    <div className="lg:text-2xl text-lg">
       <Link
         href={linkUrl}
         className="nav-hover hover:text-yellow-500 transition duration-300"
