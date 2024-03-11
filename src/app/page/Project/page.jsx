@@ -4,16 +4,10 @@ import TitlePage from "@/app/component/Utilities/TitlePage";
 
 const Project = () => {
   return (
-    <section className="py-40 bg-stone-300 lg:px-40 px-10">
+    <section className="py-40 lg:px-40 px-10">
       <TitlePage titlePage="PROJECT" />
 
-      {/* <div className="grid grid-cols-3 gap-5">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </div> */}
-
-      <div className="flex justify-center items-center gap-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
         <ProjectCard
           imageUrl="/picture.jpg"
           title="Example Card"

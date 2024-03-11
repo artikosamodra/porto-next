@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 const Contact = () => {
   return (
-    <section className="py-40 lg:px-40 px-10">
+    <section className="py-40 lg:px-40 px-10 bg-gradient-to-t from-gray-400">
       <TitlePage titlePage="CONTACT" />
 
       <h1 className="text-3xl">
@@ -14,7 +14,7 @@ const Contact = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
         dolor, ipsam non quasi error dolorem illum quas sit ipsum quam.
       </p>
-      <div className="grid grid-cols-2 pt-8 gap-20">
+      <div className="grid md:grid-cols-2 grid-cols-1 pt-8 gap-20">
         <Message />
 
         <div>

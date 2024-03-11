@@ -25,7 +25,7 @@ import Image from "next/image";
 const ProjectCard = ({ imageUrl, title, description }) => {
   return (
     <div className="overflow-hidden">
-      <div className="relative h-48">
+      <div className="relative lg:h-48 md:h-32 h-48">
         <Image
           src={imageUrl}
           alt={title}

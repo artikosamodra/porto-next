@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="py-40 lg:px-40 px-10">
+    <section className="py-40 lg:px-40 px-10 bg-gradient-to-b from-gray-400">
       <TitlePage titlePage="ABOUT" />
       <div className="grid grid-cols-5 lg:py-20 py-5">
         <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
