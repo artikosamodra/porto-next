@@ -1,30 +1,37 @@
 import TitlePage from "@/app/component/Utilities/TitlePage";
 import TypingAnimation from "@/app/component/Utilities/TypingAnimation";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
-  const textsRandom = ["rontend Developer"];
   return (
-    <section>
+    <section className="py-40 lg:px-40 px-10">
       <TitlePage titlePage="ABOUT" />
-      <div className="grid grid-cols-3 py-20">
-        <div className="col-span-1 flex justify-center items-center">
+      <div className="grid grid-cols-5 lg:py-20 py-5">
+        <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
           <Image
             src="/picture.jpg"
+            alt="Foto Profil"
             width={300}
             height={300}
             className="rounded-full w-56 h-56 shadow-xl"
           />
         </div>
-        <div className="col-span-2">
-          <h1 className="font-bold text-5xl">ARTIKO FAJAR SAMODRA</h1>
-          <TypingAnimation texts={textsRandom} />
-          <div className="pt-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            fugiat dignissimos consectetur perferendis quaerat repellendus ullam
-            sequi quod quas, deserunt magni autem nam nesciunt voluptas
-            veritatis officiis aspernatur! Quas, asperiores!
+        <div className="lg:col-span-3 col-span-5 lg:pt-0 pt-14">
+          <h1 className="font-bold text-4xl pb-2">Hello,</h1>
+          <div className="pb-10">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+            obcaecati repudiandae, laborum maxime, nulla vero hic harum id
+            repellendus deserunt similique quos dolore esse nesciunt excepturi
+            illum voluptates maiores quia, architecto placeat enim saepe natus!
+            Cupiditate quae blanditiis nobis aperiam!
           </div>
+          <Link
+            href="/"
+            className="p-2 bg-stone-400 rounded-md hover:bg-stone-300"
+          >
+            Lebih banyak tentang saya
+          </Link>
         </div>
       </div>
     </section>

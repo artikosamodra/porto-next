@@ -17,17 +17,20 @@ const NavbarB = () => {
   };
 
   return (
-    <section className="flex lg:flex-row flex-col justify-between">
+    <section className="flex md:flex-row flex-col justify-between">
       <div className="flex justify-between items-center">
         <Link href="/">
-          <h1 className="font-bold text-2xl">Artiko Fajar Samodra</h1>
+          <h1 className="md:text-2xl text-xl">Artiko Fajar Samodra</h1>
+          <h1 className="md:text-lg text-md text-stone-400">
+            Frontend Developer
+          </h1>
         </Link>
-        <button className="lg:hidden block" onClick={toggleMenu}>
+        <button className="md:hidden block" onClick={toggleMenu}>
           <List size={32} weight="fill" />
         </button>
       </div>
       <div
-        className="lg:flex lg:flex-row hidden justify-center px-4 flex-col text-center gap-14 items-center font-bold lg:py-0 py-10"
+        className="md:flex md:flex-row hidden justify-center px-4 flex-col text-center lg:gap-14 md:gap-8 items-center md:py-0 py-10"
         id="listmenu"
       >
         <NavMenu linkUrl="/page/menu#about" linkTitle="About" />

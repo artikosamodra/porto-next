@@ -5,7 +5,7 @@ import NavMenu from "./NavMenu";
 const NavbarA = () => {
   return (
     <section>
-      <div className="flex md:gap-14 gap-3 items-center font-bold">
+      <div className="flex md:gap-14 gap-3 items-center">
         <NavMenu linkUrl="/page/menu#about" linkTitle="About" />
         <NavMenu linkUrl="/page/menu#project" linkTitle="Project" />
         <NavMenu linkUrl="/page/menu#contact" linkTitle="Contact" />

@@ -23,7 +23,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="lg:pt-0 pt-4">
+    <div className="flex items-center">
       <button onClick={toggleTheme}>
         {theme === "dark" ? (
           <Sun size={24} weight="fill" className="text-yellow-500" />

@@ -7,9 +7,9 @@ import NavbarA from "./component/Utilities/NavbarA";
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col justify-center items-center w-full h-screen font-bold animate__animated animate__zoomInDown md:px-20 px-5 text-center">
+      <div className="flex flex-col justify-center items-center w-full h-screen animate__animated animate__zoomInDown md:px-20 px-5 text-center">
         <NavbarA />
-        <h1 className="lg:text-7xl md:text-5xl text-3xl md:pt-10 pt-16 pb-4">
+        <h1 className="lg:text-7xl md:text-5xl text-3xl md:pt-10 pt-16 md:pb-4 pb-2 font-bold">
           Artiko Fajar Samodra
         </h1>
         <h2 className="lg:text-4xl text-2xl md:pb-10 pb-16">
