@@ -6,7 +6,10 @@ import Link from "next/link";
 const About = () => {
   return (
     <section className="py-40 lg:px-40 px-10 bg-gradient-to-b from-gray-400">
-      <TitlePage titlePage="ABOUT" />
+      <TitlePage
+        titlePage="ABOUT"
+        embedLottie="https://lottie.host/41de3aeb-f9c5-461f-893a-ca1db52ef615/Ujab7pOtv1.json"
+      />
       <div className="grid grid-cols-5 lg:py-20 py-5">
         <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
           <Image

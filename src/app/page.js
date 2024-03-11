@@ -22,7 +22,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center md:gap-10 gap-6 md:pt-14 pt-20 px-10">
           <div className="animate__animated animate__backInDown animate__delay-1s animate__slower">
             <Icons
-              iconLink="/"
+              iconLink="https://www.instagram.com/artikofs/"
               iconName="InstagramLogo"
               iconSize="72"
               iconClass="text-white bg-slate-400 lg:p-3 p-2 rounded-full shadow-xl hover:bg-gradient-to-r from-orange-500 to-purple-600 transition duration-500 shadow-lg hover:shadow-stone-100 lg:w-20 lg:h-20 w-12 h-12"
@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="animate__animated animate__backInDown animate__delay-2s animate__slow">
             <Icons
-              iconLink="/"
+              iconLink="https://github.com/artikosamodra"
               iconName="GithubLogo"
               iconSize="md:72 24"
               iconClass="text-white bg-slate-400 lg:p-3 p-2 rounded-full shadow-xl hover:bg-stone-900 transition duration-500 shadow-lg hover:shadow-orange-500 lg:w-20 lg:h-20 w-12 h-12"
@@ -40,21 +40,12 @@ export default function Home() {
 
           <div className="animate__animated animate__backInDown animate__delay-2s animate__slower">
             <Icons
-              iconLink="/"
+              iconLink="https://www.linkedin.com/in/artiko/"
               iconName="LinkedinLogo"
               iconSize="md:72 24"
               iconClass="bg-slate-400 lg:p-3 p-2 rounded-full shadow-xl hover:bg-blue-600 transition duration-500 text-white shadow-lg hover:shadow-stone-200 lg:w-20 lg:h-20 w-12 h-12"
             />
           </div>
-
-          {/* <div className="animate__animated animate__backInDown animate__delay-1s animate__slow">
-            <Icons
-              iconLink="/"
-              iconName="FacebookLogo"
-              iconSize="md:72 24"
-              iconClass="bg-slate-400 lg:p-3 p-2 rounded-full shadow-xl hover:bg-blue-500 transition duration-500 text-white shadow-lg hover:shadow-slate-600 lg:w-20 lg:h-20 w-12 h-12"
-            />
-          </div> */}
         </div>
       </div>
     </main>

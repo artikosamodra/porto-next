@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia";
 const Contact = () => {
   return (
     <section className="py-40 lg:px-40 px-10 bg-gradient-to-t from-gray-400">
-      <TitlePage titlePage="CONTACT" />
+      <TitlePage titlePage="CONTACT" embedLottie="https://lottie.host/41de3aeb-f9c5-461f-893a-ca1db52ef615/Ujab7pOtv1.json"/>
 
       <h1 className="text-3xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing.
