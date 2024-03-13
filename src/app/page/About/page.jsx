@@ -8,9 +8,9 @@ const About = () => {
     <section className="py-40 lg:px-40 px-10 bg-gradient-to-b from-gray-400">
       <TitlePage
         titlePage="ABOUT"
-        embedLottie="https://lottie.host/41de3aeb-f9c5-461f-893a-ca1db52ef615/Ujab7pOtv1.json"
+        embedLottie="https://lottie.host/cd0b74bb-622e-48ce-abf5-f25ff78f3483/O2Cko0lnqk.json"
       />
-      <div className="grid grid-cols-5 lg:py-20 py-5">
+      <div className="grid grid-cols-5 ">
         <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
           <Image
             src="/picture.jpg"
@@ -22,18 +22,20 @@ const About = () => {
         </div>
         <div className="lg:col-span-3 col-span-5 lg:pt-0 pt-14">
           <h1 className="font-bold text-4xl pb-2">Hello,</h1>
-          <div className="pb-10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-            obcaecati repudiandae, laborum maxime, nulla vero hic harum id
-            repellendus deserunt similique quos dolore esse nesciunt excepturi
-            illum voluptates maiores quia, architecto placeat enim saepe natus!
-            Cupiditate quae blanditiis nobis aperiam!
+          <div className="pb-10 text-lg leading-8 font-semibold opacity-70">
+            My name is Artiko Fajar Samodra, alternatively referred to as Tao. I
+            focus in Frontend web apps development. I have acquired proficiency
+            in PHP, JavaScript, and C#, and have successfully executed various
+            projects utilizing React and Next frameworks. I am dedicated to
+            ongoing learning and advancement, especially within the realm of
+            Frontend development. My skillset encompasses strong analytical
+            capabilities, diligence, and adaptability.
           </div>
           <Link
             href="/"
-            className="p-2 bg-stone-400 rounded-md hover:bg-stone-300"
+            className="py-2 px-5 shadow-lg bg-stone-600 rounded-md text-white hover:bg-indigo-600 font-bold"
           >
-            Lebih banyak tentang saya
+            My Details
           </Link>
         </div>
       </div>
