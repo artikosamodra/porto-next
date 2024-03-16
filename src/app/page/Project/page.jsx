@@ -1,9 +1,21 @@
-// import ProjectCard from "@/app/component/Utilities/ProjectCard";
+"use client";
 import ProjectCard from "@/app/component/Utilities/ProjectCard";
 import TitlePage from "@/app/component/Utilities/TitlePage";
 import Link from "next/link";
+import AllProject from "./AllProject";
+import { useState } from "react";
 
 const Project = () => {
+  const [showProject, setShowProject] = useState(false);
+
+  const handleBtnAllProjects = () => {
+    setShowProject(true);
+  };
+
+  const handleBtnHiddenProjects = () => {
+    setShowProject(false);
+  };
+
   return (
     <section className="py-40 lg:px-40 px-10">
       <TitlePage
@@ -30,12 +42,27 @@ const Project = () => {
           />
         </div>
 
-        <Link
-          href="/"
+        <div
+          id="allproject"
+          style={{ display: showProject ? "block" : "none" }}
+        >
+          <AllProject />
+        </div>
+
+        <button
+          onClick={handleBtnAllProjects}
+          style={{ display: showProject ? "none" : "block" }}
           className="py-2 px-5 shadow-lg bg-stone-600 rounded-md text-white hover:bg-indigo-600 font-bold"
         >
           All Projects
-        </Link>
+        </button>
+        <button
+          onClick={handleBtnHiddenProjects}
+          style={{ display: showProject ? "block" : "none" }}
+          className="py-2 px-5 shadow-lg bg-stone-600 rounded-md text-white hover:bg-indigo-600 font-bold"
+        >
+          Hide Project
+        </button>
       </div>
     </section>
   );
