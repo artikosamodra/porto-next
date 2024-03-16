@@ -14,18 +14,18 @@ const Project = () => {
       <div className="flex flex-col justify-center items-center gap-10">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
           <ProjectCard
-            imageUrl="/picture.jpg"
-            title="Example Card"
+            imageUrl="/img/projects/homedecor.png"
+            title="Home Decor - Website"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at felis libero."
           />
           <ProjectCard
-            imageUrl="/picture.jpg"
-            title="Example Card"
+            imageUrl="/img/projects/taonime.png"
+            title="Taonime - Website App"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at felis libero."
           />
           <ProjectCard
-            imageUrl="/picture.jpg"
-            title="Example Card"
+            imageUrl="/img/projects/kingpik.png"
+            title="Kingpik Store - Website"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at felis libero."
           />
         </div>
