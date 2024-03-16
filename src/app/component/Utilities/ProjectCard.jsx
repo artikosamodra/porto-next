@@ -36,7 +36,7 @@ const ProjectCard = ({ imageUrl, title, description }) => {
       </div>
       <div className="p-4">
         <h2 className="text-xl font-semibold">{title}</h2>
-        <p className="">{description}</p>
+        <p className="py-3 leading-8">{description}</p>
       </div>
     </div>
   );
