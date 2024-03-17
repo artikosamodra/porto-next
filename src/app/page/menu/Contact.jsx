@@ -1,6 +1,6 @@
 import TitlePage from "@/app/component/Utilities/TitlePage";
-import Message from "./Message";
-import SocialMedia from "./SocialMedia";
+import Message from "../Contact/Message";
+import SocialMedia from "../Contact/SocialMedia";
 
 const Contact = () => {
   return (

@@ -2,7 +2,7 @@
 import ProjectCard from "@/app/component/Utilities/ProjectCard";
 import TitlePage from "@/app/component/Utilities/TitlePage";
 import Link from "next/link";
-import AllProject from "./AllProject";
+import AllProject from "../Project/AllProject";
 import { useState } from "react";
 
 const Project = () => {
