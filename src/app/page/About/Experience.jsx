@@ -6,7 +6,7 @@ const MyExperience = () => {
     <section className="px-20">
       <TitlePage titlePage="My Experience" />
       <JobsCard
-        logoComp="/picture"
+        logoComp="/picture.jpg"
         nameComp="Lorem"
         jobName="Lorem"
         yearsExp="Lorem"
