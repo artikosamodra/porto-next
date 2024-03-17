@@ -32,7 +32,7 @@ const About = () => {
             capabilities, diligence, and adaptability.
           </div>
           <Link
-            href="/"
+            href="/page/About"
             className="py-2 px-5 shadow-lg bg-stone-600 rounded-md text-white hover:bg-indigo-600 font-bold"
           >
             My Details
