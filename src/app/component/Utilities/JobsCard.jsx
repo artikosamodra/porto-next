@@ -1,3 +1,4 @@
+import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 const JobsCard = ({
@@ -6,12 +7,16 @@ const JobsCard = ({
   nameComp,
   yearsExp,
   descJob,
-  contriText,
+  contriText1,
+  contriText2,
+  contriText3,
+  contriText4,
+  contriText5,
 }) => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row gap-10">
       <div>
-        <Image src={logoComp} alt="logo" width={300} height={300} />
+        <Image src={logoComp} alt="logo" width={150} height={150} />
       </div>
       <div>
         <div>{jobName}</div>
@@ -19,7 +24,9 @@ const JobsCard = ({
         <div>{yearsExp}</div>
         <div>{descJob}</div>
         <button>Contribution</button>
-        <div>{contriText}</div>
+        <div className="flex">
+          <CheckCircle size={32} /> {contriText1}
+        </div>
       </div>
     </div>
   );

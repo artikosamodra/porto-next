@@ -8,10 +8,12 @@ const MyDetail = () => {
   return (
     <main>
       <NavbarB />
-      <MyInfo />
-      <MyExperience />
-      <MyExpertise />
-      <MyCertificate />
+      <div className="pt-20">
+        <MyInfo />
+        <MyExperience />
+        <MyExpertise />
+        <MyCertificate />
+      </div>
     </main>
   );
 };
