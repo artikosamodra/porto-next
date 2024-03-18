@@ -5,10 +5,10 @@ const ContriList = ({ contriText }) => {
     <div>
       <table>
         <tr>
-          <td className="p-2">
+          <td className="p-3">
             <CheckCircle size={32} />
           </td>
-          <td className="p-2 leading-7">{contriText}</td>
+          <td className="p-3 leading-7">{contriText}</td>
         </tr>
       </table>
     </div>

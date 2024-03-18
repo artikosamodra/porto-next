@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const MyInfo = () => {
   return (
-    <section className="px-40 py-10">
+    <section className="px-40 pt-32 pb-10">
       <TitlePage titlePage="My Info" />
       <div className="grid grid-cols-4 gap-20">
         <div className="col-span-1 flex justify-center items-center">

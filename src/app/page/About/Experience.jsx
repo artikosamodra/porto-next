@@ -1,9 +1,22 @@
+"use client";
+import { useState } from "react";
 import ContriList from "@/app/component/Utilities/ContriList";
 import JobsCard from "@/app/component/Utilities/JobsCard";
 import TitlePage from "@/app/component/Utilities/TitlePage";
-import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
+import { CaretDoubleDown, CheckCircle } from "@phosphor-icons/react/dist/ssr";
+import BtnExp from "@/app/component/Utilities/ButtonExp";
 
 const MyExperience = () => {
+  const [activeContent, setActiveContent] = useState(null);
+
+  const handleButtonClick = (contentId) => {
+    if (activeContent === contentId) {
+      setActiveContent(null);
+    } else {
+      setActiveContent(contentId);
+    }
+  };
+
   return (
     <section className="px-40 py-10">
       <TitlePage titlePage="My Experience" />
@@ -18,8 +31,12 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <button className="">Contribution</button>
-            <div className="py-4">
+            <BtnExp handle={() => handleButtonClick("content1")} />
+            <div
+              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+                activeContent !== "content1" && "hidden"
+              }`}
+            >
               <ContriList contriText="Conducting a 4-month mentoring program for seven prospective Junior Augmented Reality Developers, the aim is to provide a solid foundation in Augmented Reality Technology development to prepare them for integration into a new team within the company." />
               <ContriList contriText="As a trainer for the Augmented Reality and Game Workshop organized by INTARA, I work with a diverse audience, including educators and business professionals. The workshop's objective is to establish mutually beneficial partnerships across various sectors by leveraging Augmented Reality Technology." />
               <ContriList contriText="Spearheading the development of the AR House Solution application, I have led the creation of a virtual review platform for residential properties in the city of Malang. This innovative application not only utilizes augmented reality technology to attract potential property customers in Malang but also provides a unique and immersive virtual experience, enhancing engagement and interest for housing developers affiliated with INTARA." />
@@ -39,8 +56,12 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <button className="">Contribution</button>
-            <div className="py-4">
+            <BtnExp handle={() => handleButtonClick("content2")} />
+            <div
+              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+                activeContent !== "content2" && "hidden"
+              }`}
+            >
               <ContriList contriText="Successfully contributed to the development of the 'ShoesCare Laundry' Web App for a client." />
               <ContriList contriText="Created a cashier Web App." />
               <ContriList contriText="Successfully integrated the use of APIs for location services and requirements in the 'ShoesCare Laundry' Web App." />
@@ -60,8 +81,12 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <button className="">Contribution</button>
-            <div className="py-4">
+            <BtnExp handle={() => handleButtonClick("content3")} />
+            <div
+              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+                activeContent !== "content3" && "hidden"
+              }`}
+            >
               <ContriList contriText="Created 3D models of interior products marketed by the company using SketchUp." />
               <ContriList contriText="Designed features for interior product review needs." />
               <ContriList contriText="Developed Augmented Reality using Vuforia, C# Language and Unity 3D technologies." />
@@ -83,8 +108,12 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <button className="">Contribution</button>
-            <div className="py-4">
+            <BtnExp handle={() => handleButtonClick("content4")} />
+            <div
+              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+                activeContent !== "content4" && "hidden"
+              }`}
+            >
               <ContriList contriText="Successfully assisted the team in developing a game mobile app." />
               <ContriList contriText="Planned and scheduled project workflow." />
               <ContriList contriText="Implemented agile-scrum methodology." />
@@ -103,8 +132,12 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <button className="">Contribution</button>
-            <div className="py-4">
+            <BtnExp handle={() => handleButtonClick("content5")} />
+            <div
+              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+                activeContent !== "content5" && "hidden"
+              }`}
+            >
               <ContriList contriText="Successfully created smartphone games, CarBoom, Cat Dodge, Shooting Stance, Angry Quiz, and Knowledge Puzzle as solo projects assigned by the company." />
               <ContriList contriText="Contributed as an additional team member in the development of a horror game with a development team from Manila." />
               <ContriList contriText="Mastered 3D modeling using Blender." />

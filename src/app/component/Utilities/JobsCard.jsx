@@ -16,7 +16,7 @@ const JobsCard = ({
   return (
     <div className="grid grid-cols-12 gap-8">
       <div className="col-span-2">
-        <Image src={logoComp} alt="logo" width={150} height={150} />
+        <Image src={logoComp} alt="logo" width={150} height={150} className="rounded-lg" />
       </div>
       <div className="col-span-10">
         <div className="font-bold text-2xl pb-1">{jobName}</div>

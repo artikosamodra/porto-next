@@ -6,9 +6,9 @@ import MyInfo from "./Info";
 
 const MyDetail = () => {
   return (
-    <main>
+    <main className="">
       <NavbarB />
-      <div className="pt-20">
+      <div className="">
         <MyInfo />
         <MyExperience />
         <MyExpertise />
