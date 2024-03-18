@@ -8,42 +8,82 @@ const MyExpertise = () => {
       <div className="grid grid-cols-4">
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="HTML"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="CSS"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="JavaScript"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="Tailwind"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="React"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="NextJS"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="NodeJS"
           descTech="Lorem10"
         />
         <ExpertiseCard
           iconTech="/picture.jpg"
-          nameTech="Lorem"
+          nameTech="ExpressJS"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="Boostrap"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="Git"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="Unity 3D"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="AR Foundation"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="MySQL"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="C#"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="Kotlin"
+          descTech="Lorem10"
+        />
+        <ExpertiseCard
+          iconTech="/picture.jpg"
+          nameTech="PHP"
           descTech="Lorem10"
         />
       </div>
