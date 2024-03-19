@@ -9,19 +9,19 @@ import Image from "next/image";
 
 const MyInfo = () => {
   return (
-    <section className="px-40 pt-32 pb-10">
+    <section className="lg:px-40 px-10 pt-32 pb-10">
       <TitlePage titlePage="My Info" />
       <div className="grid grid-cols-4 gap-20">
-        <div className="col-span-1 flex justify-center items-center">
+        <div className="lg:col-span-1 col-span-4 flex justify-center items-center">
           <Image
             src="/picture.jpg"
             alt="profil pic"
             width={250}
             height={250}
-            className="rounded-full p-5"
+            className="rounded-full"
           />
         </div>
-        <div className="col-span-3 flex flex-col justify-center">
+        <div className="lg:col-span-3 col-span-4 flex flex-col justify-center">
           <div className="text-5xl font-bold pb-2">Artiko Fajar Samodra</div>
           <div className="text-2xl font-semibold pb-8">Frontend Developer</div>
           <div className="grid grid-cols-2 gap-2 font-semibold">
