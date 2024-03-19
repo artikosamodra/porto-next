@@ -2,7 +2,7 @@
 import { useState } from "react";
 import BtnHide from "@/app/component/Utilities/ButtonHide";
 import CertificateCard from "@/app/component/Utilities/CertificateCard";
-import TitlePage from "@/app/component/Utilities/TitlePage";
+import TitleAbout from "@/app/component/Utilities/TitleAbout";
 
 const MyCertificate = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -15,9 +15,9 @@ const MyCertificate = () => {
     }
   };
   return (
-    <section className="px-40 py-10">
-      <TitlePage titlePage="MyCertificate" />
-      <div className="grid grid-cols-4 gap-10 pb-10">
+    <section className="md:px-40 px-8 py-10">
+      <TitleAbout titleAbout="MyCertificate" />
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 pb-10 text-center">
         <CertificateCard
           pdfSrc="https://www.coursera.org/account/accomplishments/specialization/certificate/CXAL9YH2YE43"
           nameCerti="Google IT Support"
@@ -41,7 +41,7 @@ const MyCertificate = () => {
       </div>
       <div>
         <div
-          className={`grid grid-cols-4 gap-10 ${
+          className={`grid lg:grid-cols-4 grid-cols-2 gap-10 ${
             activeContent !== "showall" && "hidden"
           }`}
         >
