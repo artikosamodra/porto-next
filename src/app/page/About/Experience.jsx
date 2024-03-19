@@ -3,8 +3,8 @@ import { useState } from "react";
 import ContriList from "@/app/component/Utilities/ContriList";
 import JobsCard from "@/app/component/Utilities/JobsCard";
 import TitlePage from "@/app/component/Utilities/TitlePage";
-import { CaretDoubleDown, CheckCircle } from "@phosphor-icons/react/dist/ssr";
-import BtnExp from "@/app/component/Utilities/ButtonExp";
+import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
+import BtnHide from "@/app/component/Utilities/ButtonHide";
 
 const MyExperience = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -31,7 +31,10 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <BtnExp handle={() => handleButtonClick("content1")} />
+            <BtnHide
+              nameBtn="Contribution"
+              handle={() => handleButtonClick("content1")}
+            />
             <div
               className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content1" && "hidden"
@@ -56,7 +59,10 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <BtnExp handle={() => handleButtonClick("content2")} />
+            <BtnHide
+              nameBtn="Contribution"
+              handle={() => handleButtonClick("content2")}
+            />
             <div
               className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content2" && "hidden"
@@ -81,7 +87,10 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <BtnExp handle={() => handleButtonClick("content3")} />
+            <BtnHide
+              nameBtn="Contribution"
+              handle={() => handleButtonClick("content3")}
+            />
             <div
               className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content3" && "hidden"
@@ -108,7 +117,10 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <BtnExp handle={() => handleButtonClick("content4")} />
+            <BtnHide
+              nameBtn="Contribution"
+              handle={() => handleButtonClick("content4")}
+            />
             <div
               className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content4" && "hidden"
@@ -132,7 +144,10 @@ const MyExperience = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2"></div>
           <div className="col-span-10">
-            <BtnExp handle={() => handleButtonClick("content5")} />
+            <BtnHide
+              nameBtn="Contribution"
+              handle={() => handleButtonClick("content5")}
+            />
             <div
               className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content5" && "hidden"
