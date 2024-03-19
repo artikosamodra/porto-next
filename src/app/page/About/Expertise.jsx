@@ -1,11 +1,11 @@
 import ExpertiseCard from "@/app/component/Utilities/ExpertiseCard";
-import TitlePage from "@/app/component/Utilities/TitlePage";
+import TitleAbout from "@/app/component/Utilities/TitleAbout";
 
 const MyExpertise = () => {
   return (
-    <section className="px-40 py-10">
-      <TitlePage titlePage="My Expertise" />
-      <div className="grid grid-cols-4 gap-4">
+    <section className="lg:px-40 px-10 py-10">
+      <TitleAbout titleAbout="My Expertise" />
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
         <ExpertiseCard
           iconTech="/img/skill/html.png"
           nameTech="HTML"
