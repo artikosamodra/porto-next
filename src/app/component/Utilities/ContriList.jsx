@@ -8,7 +8,7 @@ const ContriList = ({ contriText }) => {
           <td className="p-3">
             <CheckCircle size={32} />
           </td>
-          <td className="p-3 leading-7">{contriText}</td>
+          <td className="p-3 leading-7 lg:text-lg text-sm">{contriText}</td>
         </tr>
       </table>
     </div>

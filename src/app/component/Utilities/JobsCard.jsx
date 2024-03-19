@@ -15,14 +15,20 @@ const JobsCard = ({
 }) => {
   return (
     <div className="grid grid-cols-12 gap-8">
-      <div className="col-span-2">
-        <Image src={logoComp} alt="logo" width={150} height={150} className="rounded-lg" />
+      <div className="md:col-span-2 col-span-12">
+        <Image
+          src={logoComp}
+          alt="logo"
+          width={120}
+          height={120}
+          className="rounded-lg"
+        />
       </div>
-      <div className="col-span-10">
-        <div className="font-bold text-2xl pb-1">{jobName}</div>
-        <div className="font-semibold text-xl pb-1">{nameComp}</div>
-        <div className="font-semibold pb-1">{yearsExp}</div>
-        <div className="py-5 leading-7">{descJob}</div>
+      <div className="md:col-span-10 col-span-12">
+        <div className="font-bold lg:text-2xl text-xl pb-1">{jobName}</div>
+        <div className="font-semibold lg:text-xl text-lg pb-1">{nameComp}</div>
+        <div className="font-semibold lg:text-lg text-md pb-1">{yearsExp}</div>
+        <div className="py-5 leading-7 lg:text-lg text-md">{descJob}</div>
       </div>
     </div>
   );

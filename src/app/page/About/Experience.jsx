@@ -2,9 +2,8 @@
 import { useState } from "react";
 import ContriList from "@/app/component/Utilities/ContriList";
 import JobsCard from "@/app/component/Utilities/JobsCard";
-import TitlePage from "@/app/component/Utilities/TitlePage";
-import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 import BtnHide from "@/app/component/Utilities/ButtonHide";
+import TitleAbout from "@/app/component/Utilities/TitleAbout";
 
 const MyExperience = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -18,8 +17,8 @@ const MyExperience = () => {
   };
 
   return (
-    <section className="px-40 py-10">
-      <TitlePage titlePage="My Experience" />
+    <section className="lg:px-40 px-10 py-10">
+      <TitleAbout titleAbout="My Experience" />
       <div className="pb-10">
         <JobsCard
           logoComp="/img/company/digistar.jpg"
@@ -29,8 +28,8 @@ const MyExperience = () => {
           descJob="Playing the role of a mentor for Junior Augmented Reality Developers and a trainer in public workshops organized by the company. Collaborating with stakeholders in developing Augmented Reality Apps Projects for innovation in enhancing business in other sectors, serving as solutions that not only follow trends but also pioneer in transforming user experiences."
         />
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-2"></div>
-          <div className="col-span-10">
+          <div className="col-span-2 md:block hidden"></div>
+          <div className="md:col-span-10 col-span-12">
             <BtnHide
               nameBtn="Contribution"
               handle={() => handleButtonClick("content1")}
@@ -57,8 +56,8 @@ const MyExperience = () => {
           descJob="Involved in the development of web applications as part of a team to meet client needs. Using React technology to build the frontend application. Also contributed to processing APIs together with the integrated and optimized backend."
         />
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-2"></div>
-          <div className="col-span-10">
+          <div className="col-span-2 md:block hidden"></div>
+          <div className="md:col-span-10 col-span-12">
             <BtnHide
               nameBtn="Contribution"
               handle={() => handleButtonClick("content2")}
@@ -85,8 +84,8 @@ const MyExperience = () => {
           descJob="Responsible for developing marker-based augmented reality applications for virtual interior product reviews."
         />
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-2"></div>
-          <div className="col-span-10">
+          <div className="col-span-2 md:block hidden"></div>
+          <div className="md:col-span-10 col-span-12">
             <BtnHide
               nameBtn="Contribution"
               handle={() => handleButtonClick("content3")}
@@ -115,8 +114,8 @@ const MyExperience = () => {
           descJob="Served as an assistant team lead to organize task assignments. Assisted the senior project manager in designing the project framework, team organization, and handling various stakeholders/clients."
         />
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-2"></div>
-          <div className="col-span-10">
+          <div className="col-span-2 md:block hidden"></div>
+          <div className="md:col-span-10 col-span-12">
             <BtnHide
               nameBtn="Contribution"
               handle={() => handleButtonClick("content4")}
@@ -142,14 +141,14 @@ const MyExperience = () => {
           descJob="Contributed to helping the team develop Unity 3D and C# game applications."
         />
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-2"></div>
-          <div className="col-span-10">
+          <div className="col-span-2 md:block hidden"></div>
+          <div className="md:col-span-10 col-span-12">
             <BtnHide
               nameBtn="Contribution"
               handle={() => handleButtonClick("content5")}
             />
             <div
-              className={`mt-4 p-4 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
+              className={`mt-4 md:p-4 p-1 bg-stone-100 text-stone-500 shadow-xl rounded-md ${
                 activeContent !== "content5" && "hidden"
               }`}
             >
