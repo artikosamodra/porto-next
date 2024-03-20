@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="lg:col-span-3 col-span-5 lg:pt-0 pt-14">
           <h1 className="font-bold text-4xl pb-2">Hello,</h1>
-          <div className="pb-10 text-lg leading-8 font-semibold opacity-70">
+          <div className="pb-10 lg:text-lg text-md leading-8 font-semibold opacity-70">
             My name is Artiko Fajar Samodra, alternatively referred to as Tao. I
             focus in Frontend web apps development. I have acquired proficiency
             in PHP, JavaScript, and C#, and have successfully executed various

@@ -13,10 +13,10 @@ const SocialMedia = () => {
       <div className="flex flex-col font-bold">
         <Link
           href="/"
-          className="text-blue-900 bg-blue-400 border border-3 shadow-xl w-full py-3 px-8 my-4 rounded-lg flex gap-4 items-center hover:bg-gradient-to-r from-orange-500 to-purple-600 hover:text-stone-100 transition duration-200"
+          className="text-blue-900 bg-blue-400 border border-3 shadow-xl w-full py-3 px-8 my-4 rounded-lg flex gap-4 items-center hover:bg-gradient-to-r from-orange-500 to-purple-600 hover:text-stone-100 transition duration-200 md:text-lg text-md"
         >
           <InstagramLogo size={40} weight="fill" />
-          <h1 className="text-lg">Instagram</h1>
+          <h1>Instagram</h1>
         </Link>
 
         <Link
