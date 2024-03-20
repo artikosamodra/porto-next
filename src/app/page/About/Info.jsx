@@ -50,7 +50,7 @@ const MyInfo = () => {
           </div>
         </div>
       </div>
-      <div className="pt-16 pb-20 leading-8 lg:text-left text-center">
+      <div className="pt-16 pb-20 leading-8 lg:text-left text-center md:text-lg text-md">
         A dedicated Fullstack Developer with strong analytical skills,
         diligence, quick learning ability, high enthusiasm, and easy
         adaptability. Committed to continuous growth and learning in software

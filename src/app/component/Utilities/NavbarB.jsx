@@ -6,11 +6,13 @@ import Link from "next/link";
 
 const NavbarB = () => {
   window.addEventListener("scroll", function () {
-    var navbar = document.getElementById("navbar");
-    if (window.scrollY > 0) {
-      navbar.classList.add("bg-white-scroll");
-    } else {
-      navbar.classList.remove("bg-white-scroll");
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      if (window.scrollY > 0) {
+        navbar.classList.add("bg-white-scroll");
+      } else {
+        navbar.classList.remove("bg-white-scroll");
+      }
     }
   });
 
@@ -27,7 +29,7 @@ const NavbarB = () => {
 
   return (
     <section
-      className="w-full lg:px-40 px-10 fixed top-0 z-50 shadow-md py-4 text-stone-700"
+      className="w-full lg:px-40 px-10 fixed top-0 z-50 shadow-md py-4 text-stone-600"
       id="navbar"
     >
       <div className="flex md:flex-row flex-col justify-between">
