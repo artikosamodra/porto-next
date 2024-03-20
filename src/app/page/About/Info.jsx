@@ -26,7 +26,7 @@ const MyInfo = () => {
             Artiko Fajar Samodra
           </div>
           <div className="md:text-2xl text-xl font-semibold pb-8">
-            Frontend Developer
+            Fullstack Developer
           </div>
           <div className="flex lg:justify-start justify-center">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-2 font-semibold lg:text-md text-sm">
@@ -51,15 +51,15 @@ const MyInfo = () => {
         </div>
       </div>
       <div className="pt-16 pb-20 leading-8 lg:text-left text-center">
-        A dedicated Fullstack Engineer with strong analytical skills, diligence,
-        quick learning ability, high enthusiasm, and easy adaptability.
-        Committed to continuous growth and learning in software development,
-        especially in Backend. Outside of work, he enjoys building mutually
-        beneficial relationships. A dedicated Fullstack Engineer with strong
-        analytical skills, diligence, quick learning ability, high enthusiasm,
-        and easy adaptability. Committed to continuous growth and learning in
-        software development, especially in Backend. Outside of work, he enjoys
-        building mutually beneficial relationships.
+        A dedicated Fullstack Developer with strong analytical skills,
+        diligence, quick learning ability, high enthusiasm, and easy
+        adaptability. Committed to continuous growth and learning in software
+        development, especially in Backend. Outside of work, he enjoys building
+        mutually beneficial relationships. A dedicated Fullstack Engineer with
+        strong analytical skills, diligence, quick learning ability, high
+        enthusiasm, and easy adaptability. Committed to continuous growth and
+        learning in software development, especially in Backend. Outside of
+        work, he enjoys building mutually beneficial relationships.
       </div>
     </section>
   );
