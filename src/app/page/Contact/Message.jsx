@@ -68,12 +68,14 @@ const Message = () => {
             className="w-full border rounded-md px-4 py-2 mt-1 focus:outline-none focus:border-blue-500"
           ></textarea>
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-        >
-          Submit
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-blue-500 text-white font-semibold px-8 py-2 rounded-md hover:bg-blue-600"
+          >
+            Send
+          </button>
+        </div>
       </form>
     </section>
   );

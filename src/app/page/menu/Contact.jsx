@@ -10,12 +10,11 @@ const Contact = () => {
         embedLottie="https://lottie.host/a2fd473b-892c-43b9-9399-7143c7ac55bd/bL8vBf3Z5x.json"
       />
 
-      <h1 className="text-3xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing.
-      </h1>
+      <h1 className="text-3xl">Let's discuss your projects.</h1>
       <p className="py-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        dolor, ipsam non quasi error dolorem illum quas sit ipsum quam.
+        Please fill out the form and submit your inquiries, I will respond as
+        soon as possible. Alternatively, if you prefer, you can reach out to me
+        via my email address.
       </p>
       <div className="grid md:grid-cols-2 grid-cols-1 pt-8 gap-20">
         <Message />
