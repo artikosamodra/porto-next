@@ -3,18 +3,27 @@ import ThemeSwitcher from "@/app/ThemeSwitcher";
 import NavMenu from "./NavMenu";
 import { List } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const NavbarB = () => {
-  window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
-    if (navbar) {
-      if (window.scrollY > 0) {
-        navbar.classList.add("bg-white-scroll");
-      } else {
-        navbar.classList.remove("bg-white-scroll");
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById("navbar");
+      if (navbar) {
+        if (window.scrollY > 0) {
+          navbar.classList.add("bg-white-scroll");
+        } else {
+          navbar.classList.remove("bg-white-scroll");
+        }
       }
-    }
-  });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     const listMenu = document.getElementById("listmenu");

@@ -1,7 +1,6 @@
 import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
-import Link from "next/link";
 import NavbarB from "@/app/component/Utilities/NavbarB";
 
 const MainPage = () => {
