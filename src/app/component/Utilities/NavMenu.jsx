@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "animate.css";
 
 const NavMenu = ({ linkUrl, linkTitle }) => {
   return (
