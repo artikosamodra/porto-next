@@ -1,7 +1,9 @@
+"use client";
 import TitlePage from "@/app/component/Utilities/TitlePage";
-import TypingAnimation from "@/app/component/Utilities/TypingAnimation";
+import AboutDesc from "@/app/component/compAbout/AboutDesc";
+import AboutLink from "@/app/component/compAbout/AboutLink";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const About = () => {
   return (
@@ -12,31 +14,23 @@ const About = () => {
       />
       <div className="grid grid-cols-5 ">
         <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
-          <Image
-            src="/picture.jpg"
-            alt="Foto Profil"
-            width={300}
-            height={300}
-            className="rounded-full w-56 h-56 shadow-xl"
-          />
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
+            <Image
+              src="/picture.jpg"
+              alt="Foto Profil"
+              width={300}
+              height={300}
+              className="rounded-full w-56 h-56 shadow-xl"
+            />
+          </motion.div>
         </div>
         <div className="lg:col-span-3 col-span-5 lg:pt-0 pt-14">
-          <h1 className="font-bold text-4xl pb-2">Hello,</h1>
-          <div className="pb-10 lg:text-lg text-md leading-8 font-semibold opacity-70">
-            My name is Artiko Fajar Samodra, alternatively referred to as Tao. I
-            focus in Frontend web apps development. I have acquired proficiency
-            in PHP, JavaScript, and C#, and have successfully executed various
-            projects utilizing React and Next frameworks. I am dedicated to
-            ongoing learning and advancement, especially within the realm of
-            Frontend development. My skillset encompasses strong analytical
-            capabilities, diligence, and adaptability.
-          </div>
-          <Link
-            href="/page/About"
-            className="py-2 px-5 shadow-lg bg-stone-600 rounded-md text-white hover:bg-indigo-600 font-bold"
-          >
-            My Details
-          </Link>
+          <AboutDesc />
+          <AboutLink />
         </div>
       </div>
     </section>
