@@ -1,23 +1,7 @@
 import { GithubLogo, Globe } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import Link from "next/link";
-import Techno from "./techno";
 
-const ProjectCard = ({
-  imageUrl,
-  title,
-  description,
-  linkUrl,
-  linkRepo,
-  tech1,
-  tech2,
-  tech3,
-  tech4,
-  tech1ClassName,
-  tech2ClassName,
-  tech3ClassName,
-  tech4ClassName,
-}) => {
+const ProjectCard = ({ imageUrl, title, description, linkUrl, linkRepo }) => {
   return (
     <div className="hover:bg-gradient-to-b from-gray-400 transition duration-5000 rounded-lg p-2">
       <div className="overflow-hidden">

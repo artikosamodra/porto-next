@@ -36,8 +36,8 @@ const AllProject = () => {
         </div>
         <div className="pb-4">
           <ProjectCard
-            linkUrl="/"
-            linkRepo="/"
+            linkUrl="https://artikosamodra.github.io/mcv/"
+            linkRepo="https://github.com/artikosamodra/mcv"
             imageUrl="/img/projects/cvfullstack.png"
             title="My Portofolio (Website)"
             description="My Portfolio Website is created using Bootstrap."
