@@ -7,7 +7,7 @@ const AllProject = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
         <div className="pb-4">
           <ProjectCard
-            linkUrl="/"
+            linkUrl="https://artiko-porto.vercel.app/"
             linkRepo="https://github.com/artikosamodra/porto-next"
             imageUrl="/img/projects/cvfrontend.png"
             title="My Portofolio (Website)"
