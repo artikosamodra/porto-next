@@ -7,7 +7,7 @@ const AboutLink = () => {
     <motion.div
       initial={{ rotateX: 180, opacity: 0 }}
       animate={{ rotateX: 0, opacity: 1 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 2, delay: 1 }}
     >
       <Link
         href="/page/About"

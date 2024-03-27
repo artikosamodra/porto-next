@@ -6,7 +6,7 @@ const Biodata = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 5, delay: 6 }}
+      transition={{ duration: 3, delay: 3 }}
     >
       <h1 className="lg:text-7xl md:text-5xl text-3xl md:pt-10 pt-16 md:pb-4 pb-2 font-bold">
         Artiko Fajar Samodra

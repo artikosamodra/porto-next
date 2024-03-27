@@ -13,7 +13,7 @@ const AboutDesc = () => {
         opacity: 1, // Opacity berubah menjadi 1
         clipPath: "inset(0 0 0 0)", // Clip-path berubah sehingga teks muncul dari kanan ke kiri
       }}
-      transition={{ duration: 2 }} // Durasi animasi
+      transition={{ duration: 2, delay: 1 }} // Durasi animasi
     >
       <h1 className="font-bold text-4xl pb-2">Hello,</h1>
       <div className="pb-10 lg:text-lg text-md leading-8 font-semibold opacity-70">

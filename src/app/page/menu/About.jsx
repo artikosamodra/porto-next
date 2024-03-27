@@ -8,16 +8,23 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="py-40 lg:px-40 px-10 bg-gradient-to-b from-gray-400">
-      <TitlePage
-        titlePage="ABOUT"
-        embedLottie="https://lottie.host/cd0b74bb-622e-48ce-abf5-f25ff78f3483/O2Cko0lnqk.json"
-      />
+      <motion.div
+        initial={{ rotateZ: 90, opacity: 0 }}
+        animate={{ rotateZ: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <TitlePage
+          titlePage="ABOUT"
+          embedLottie="https://lottie.host/cd0b74bb-622e-48ce-abf5-f25ff78f3483/O2Cko0lnqk.json"
+        />
+      </motion.div>
+
       <div className="grid grid-cols-5 ">
         <div className="lg:col-span-2 col-span-5 flex justify-center items-center">
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.5, delay: 1 }}
           >
             <Image
               src="/picture.jpg"

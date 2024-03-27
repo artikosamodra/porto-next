@@ -11,7 +11,7 @@ export default function Home() {
         <motion.div
           initial={{ y: -1000, scale: 0.2 }}
           animate={{ y: 0, scale: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1 }}
         >
           <NavbarA />
         </motion.div>
@@ -20,7 +20,7 @@ export default function Home() {
           <motion.div
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
-            transition={{ duration: 2, delay: 2.5 }}
+            transition={{ duration: 1.5, delay: 1 }}
           >
             <Icons
               iconLink="https://www.instagram.com/artikofs/"
@@ -33,7 +33,7 @@ export default function Home() {
           <motion.div
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
-            transition={{ duration: 2, delay: 3 }}
+            transition={{ duration: 1.5, delay: 1.5 }}
           >
             <Icons
               iconLink="https://github.com/artikosamodra"
@@ -46,7 +46,7 @@ export default function Home() {
           <motion.div
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
-            transition={{ duration: 2, delay: 3.5 }}
+            transition={{ duration: 1.5, delay: 1.3 }}
           >
             <Icons
               iconLink="https://www.linkedin.com/in/artiko/"
