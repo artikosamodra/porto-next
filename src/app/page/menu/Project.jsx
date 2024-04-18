@@ -36,7 +36,7 @@ const Project = () => {
         ref={ref}
         initial={{ x: -200, opacity: 0 }}
         animate={playAnim ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
-        transition={{ delay: 2, duration: 2 }}
+        transition={{ delay: 1, duration: 1 }}
       >
         <TitlePage
           titlePage1="PROJ"

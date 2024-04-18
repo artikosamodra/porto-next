@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section className="py-40 lg:px-40 px-10 bg-gradient-to-t from-gray-400">
       <TitlePage
-        titlePage="CONTACT"
+        titlePage1="CONTACT"
         embedLottie="https://lottie.host/a2fd473b-892c-43b9-9399-7143c7ac55bd/bL8vBf3Z5x.json"
       />
 
