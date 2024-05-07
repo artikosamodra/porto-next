@@ -7,6 +7,20 @@ const AllProject = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
         <div className="pb-4">
           <ProjectCard
+            linkUrl="https://artikosamodra.github.io/kingpik-store/"
+            linkRepo="https://github.com/artikosamodra/kingpik-store"
+            imageUrl="/img/projects/kingpik.png"
+            title="Kingpik Store (Website)"
+            description="Kingpik Store is a website for promoting and selling products of SMEs, such as potato and taro chips."
+          />
+          <div className="flex flex-wrap gap-2 pt-2 px-4">
+            <Techno tech="HTML" />
+            <Techno tech="CSS" />
+            <Techno tech="JavaScript" />
+          </div>
+        </div>
+        <div className="pb-4">
+          <ProjectCard
             linkUrl="https://artiko-porto.vercel.app/"
             linkRepo="https://github.com/artikosamodra/porto-next"
             imageUrl="/img/projects/cvfrontend.png"

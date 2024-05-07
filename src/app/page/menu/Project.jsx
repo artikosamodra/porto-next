@@ -90,11 +90,11 @@ const Project = () => {
 
               <div className="pb-4">
                 <ProjectCard
-                  linkUrl="https://artikosamodra.github.io/kingpik-store/"
-                  linkRepo="https://github.com/artikosamodra/kingpik-store"
-                  imageUrl="/img/projects/kingpik.png"
-                  title="Kingpik Store (Website)"
-                  description="Kingpik Store is a website for promoting and selling products of SMEs, such as potato and taro chips."
+                  linkUrl="https://taoshop-dusky.vercel.app/"
+                  linkRepo="https://github.com/artikosamodra/olshop/"
+                  imageUrl="/img/projects/taoshop.png"
+                  title="Taoshop (Web Apps)"
+                  description="Taoshop is a prototype of an online store website with validation and API."
                 />
                 <div className="flex flex-wrap gap-2 pt-2 px-4">
                   <Techno tech="HTML" />
