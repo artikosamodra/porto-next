@@ -97,9 +97,10 @@ const Project = () => {
                   description="Taoshop is a prototype of an online store website with validation and API."
                 />
                 <div className="flex flex-wrap gap-2 pt-2 px-4">
-                  <Techno tech="HTML" />
-                  <Techno tech="CSS" />
-                  <Techno tech="JavaScript" />
+                  <Techno tech="NextJS" />
+                  <Techno tech="React" />
+                  <Techno tech="Tailwind" />
+                  <Techno tech="Framer Motion" />
                 </div>
               </div>
             </div>
